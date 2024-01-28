@@ -1,0 +1,82 @@
+:root {
+  --top-size: 4%;
+  --gap-size: 10px;
+  --default-color: black;
+}
+
+p {
+  margin: 0;
+}
+
+.body-calc {
+  width: 400px;
+  height: 400px;
+  border: solid var(--default-color) 1px;
+  box-shadow: 0px 0px 2px 0px var(--default-color);
+  margin: 40px auto;
+}
+
+.display-data {
+  width: 100%;
+  height: 10%;
+  border-bottom: solid var(--default-color) 1px;
+}
+
+.visible-data {
+  width: 96%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
+.grid-buttons {
+  width: 100%;
+  height: 70%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  gap: var(--gap-size);
+  margin-top: var(--top-size);
+}
+
+.button {
+  background-color: rgb(194, 186, 186);
+  cursor: pointer;
+  opacity: 1;
+  transition: opacity 0.1s ease-in-out;
+}
+
+.button p {
+  color: var(--default-color);
+  transition: color 0.1s ease-in-out;
+}
+
+.button:active {
+  opacity: 0.3;
+}
+
+.button:active p {
+  color: red;
+}
+
+.input-buttons {
+  width: 100%;
+  height: 11.7%;
+  margin-top: var(--top-size);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  gap: var(--gap-size);
+}
+
+.input-button {
+  height: 100%;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
