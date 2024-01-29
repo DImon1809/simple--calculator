@@ -19,7 +19,12 @@ p {
 @media (max-width: 500px){
   .body-calc {
   width: 380px;
-  height: 400px;
+  }
+}
+
+@media (max-width: 400px){
+  .body-calc {
+  width: 360px;
   }
 }
 
