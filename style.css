@@ -16,6 +16,13 @@ p {
   margin: 40px auto;
 }
 
+@media (max-width: 500px){
+  .body-calc {
+  width: 380px;
+  height: 400px;
+  }
+}
+
 .display-data {
   width: 100%;
   height: 10%;
